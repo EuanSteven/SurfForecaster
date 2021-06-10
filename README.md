@@ -33,12 +33,10 @@ A Python Script to check the Surf Forecast
    cd python-surf-forecast
    python3.8 -m pip install -r requirements.txt
    ```
+3. Run the `main.py` file using `python main.py` 
 
 
-## 🔧Run Python Script
-#### 1. Run the `main.py` file using `python main.py` 
-
-## 📝Configure `main.py`
+## 📝Configuring `main.py`
 
 
 ## 📄License
