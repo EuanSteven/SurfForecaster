@@ -2,7 +2,7 @@
 
 A Python Script to check the Surf Forecast
 
-<img src="https://github.com/Xioto/python-surf-forecast/blob/main/docs/assets/img/logo.png" alt="logo" width="200"/>
+<img src="https://github.com/Xioto/python-surf-forecast/blob/main/docs/assets/img/logo.png" alt="logo" width="500"/>
 
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/yuk7/wsldl/Mingw-w64%20Cross%20CI?logo=GitHub&style=flat-square)](https://github.com/yuk7/wsldl/actions?query=workflow%3A%22Mingw-w64+Cross+CI%22)
 [![AppVeyor](https://img.shields.io/appveyor/ci/yuk7/wsldl.svg?logo=AppVeyor&style=flat-square)](https://ci.appveyor.com/project/yuk7/wsldl)
