@@ -7,7 +7,7 @@ A Python Script to check the Surf Forecast
 [![GitHub Status](https://img.shields.io/github/checks-status/Xioto/python-surf-forecast/main)](https://github.com/Xioto/python-surf-forecast/)
 [![Github All Releases](https://img.shields.io/github/downloads/Xioto/python-surf-forecast/total.svg?style=flat-square)](https://github.com/yuk7/wsldl/releases/latest)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-![License](https://img.shields.io/github/license/Xioto/python-surf-forecast.svg?style=flat-square)
+![License](https://img.shields.io/github/license/Xioto/python-surf-forecast)
 
 
 ### [Detailed documentation is here](https://git.io/wsldl-doc)
