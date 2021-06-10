@@ -15,33 +15,30 @@ A Python Script to check the Surf Forecast
 ### [Detailed documentation is here](https://git.io/wsldl-doc)
 
 ## 💻Requirements
-* Windows 10 1709 Fall Creators Update 64bit or later.
-* Windows Subsystem for Linux feature is enabled.
+* Python 3.8
+* Pip
 
-## 📦Install with Prebuilt Packages
-[**You can see List on docs**](https://wsldl-pg.github.io/docs/Using-wsldl/#distros)
+## 📦Installation
 
 **Note:**
-Exe filename is using to the instance name to register.
-If you rename it, you can register with a different name.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Xioto/python-surf-forecast
+   ```
+2. Install Python packages
+   ```sh
+   # Windows
+   cd python-surf-forecast
+   py -3 -m pip install -r requirements.txt
+   
+   # Unix
+   cd python-surf-forecast
+   python3.8 -m pip install -r requirements.txt
+   ```
 
 
-## 🔧Install with any rootfs
-#### 1. [Download Launcher.exe](https://github.com/yuk7/wsldl/releases/latest)
-#### 2. Rename it for distribution name to register.
-(Ex:Rename to Arch.exe if you want to use "Arch" for the Instance name)
-#### 3. Put your rootfs.tar(.gz) in same directory as exe (Installation directory)
-#### 4. Run exe to install. This process may take a few minutes.
-
-## 🔗Use as a Launcher for already installed distribution
-#### 1. [Download Launcher.exe](https://github.com/yuk7/wsldl/releases/latest)
-#### 2. Rename it for registerd instance name.
-Please check the registered instance name of the distribution with `wslconfig /l` command.
-(Ex: If the instance name is "Ubuntu-20.04", rename `Launcher.exe` to `Ubuntu-20.04.exe`)
-#### 4. Run exe to Launch instance or configuration.
-For details, please see the help. (`{InstanceName}.exe --help`)
-
-Note: You can distribute your distribution including wsldl exe.
+## 🔧Run Python Script
+#### Run the `main.py` file using `py -3 main.py` 
 
 ## 📝How-to-Use(for Installed Instance)
 #### exe Usage
