@@ -17,11 +17,19 @@ from email.mime.text import MIMEText # for sending Basic Text in emails
 cache_file = 'response.json'
 data = []
 
-warnings.filterwarnings("ignore") # ignores SyntaxWarning
+print("""\
+ＴＨＡＮＫ ＹＯＵ ＦＯＲ  ＵＳＩＮＧ ＴＨＥ ＰＹＴＨＯＮ－ＳＵＲＦ－ＦＯＲＥＣＡＳＴ
+               """)
+def fxn():
+    warnings.warn("deprecated", DeprecationWarning)
+
+with warnings.catch_warnings():
+    warnings.simplefilter("ignore")
+    fxn()
 
 weekno = datetime.datetime.today().weekday() # finds current date
 if weekno < 5: # if today is a weekday
-    print("Pass")
+    pass
 else: #if today is a weekend
     print("Attempting to load " + cache_file)
     with open(cache_file, 'r') as f: # opens cache_file 
