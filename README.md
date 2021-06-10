@@ -4,7 +4,7 @@ A Python Script to check the Surf Forecast
 
 <img src="https://github.com/Xioto/python-surf-forecast/blob/main/docs/assets/img/logo.png" alt="logo" width="500"/>
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Xioto/python-surf-forecast/Mingw-w64%20Cross%20CI?logo=GitHub&style=flat-square)](https://github.com/Xioto/python-surf-forecast/actions?query=workflow%3A%22Mingw-w64+Cross+CI%22)
+[![GitHub Status](https://img.shields.io/github/checks-status/Xioto/python-surf-forecast/main)](https://github.com/Xioto/python-surf-forecast/)
 [![Github All Releases](https://img.shields.io/github/downloads/Xioto/python-surf-forecast/total.svg?style=flat-square)](https://github.com/yuk7/wsldl/releases/latest)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![License](https://img.shields.io/github/license/Xioto/python-surf-forecast.svg?style=flat-square)
