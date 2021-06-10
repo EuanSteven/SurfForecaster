@@ -39,6 +39,7 @@ A Python Script to check the Surf Forecast
 ## 📝Configuring `main.py`
 
 
+
 ## 📄License
 This repository is licensed under [MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE)
 
