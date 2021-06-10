@@ -10,7 +10,7 @@ A Python Script to check the Surf Forecast
 ![License](https://img.shields.io/github/license/Xioto/python-surf-forecast)
 
 
-### [Detailed documentation is here](https://git.io/wsldl-doc)
+### [Detailed documentation is here](https://xioto.github.io/python-surf-forecast)
 
 ## 💻Requirements
 * Python 3.8
