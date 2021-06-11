@@ -1,9 +1,8 @@
 # main.py for python-surf-forecast
 # Author: Xioto
-# Last updated: 10/06/2021
-# Version 1.1
-# Latest Change: Added Email Support
-# Next Change: Add HTML Email Support, add Error Handling and change from "ignore all" to ignoring only SyntaxWarnings
+# Last updated: 11/06/2021
+# Version 1.2
+# Latest Change: Added Discord Webhook Support
 # Licensed under the MIT License
 
 import requests # for API requests
@@ -11,6 +10,8 @@ import datetime # for finding date
 import warnings # for ignoring SyntaxWarnings
 import json # for caching API response
 import smtplib # for sending emails
+import discord_webhook # for discord webhook
+from discord_webhook import DiscordWebhook # renaming
 from email.mime.multipart import MIMEMultipart # for adding HTML email support (coming soon...)
 from email.mime.text import MIMEText # for sending Basic Text in emails
 
@@ -56,8 +57,7 @@ else: #if today is a weekend
         print('Found') # if a waveHeight above 2.00 is found then send email
 
     mail_content = '''
-    "Hi!\nTHe Python script has detected surf at your-location\nHere is the link to MagicSeaweed:\nhttps://magicseaweed.com
-    \n I am a Bot, if I am wrong, and there is no surf, please contact Xioto."
+    "MAIL_CONTENT"
     ''' # content for email
     sender_address = 'your-gmail-address' # see docs for email support
     sender_pass = 'your-gmail-password'
@@ -65,7 +65,7 @@ else: #if today is a weekend
     message = MIMEMultipart()
     message['From'] = sender_address
     message['To'] = receiver_address
-    message['Subject'] = 'Check MagicSeaweed for Surf Forecast'
+    message['Subject'] = 'EMAIL_SUBJECT'
     message.attach(MIMEText(mail_content, 'plain'))
     session = smtplib.SMTP('smtp.gmail.com', 587)
     session.starttls()
@@ -74,3 +74,6 @@ else: #if today is a weekend
     session.sendmail(sender_address, receiver_address, text)
     session.quit()
     print('Mail Sent')
+
+    webhook = DiscordWebhook(url='DISCORD-WEBHOOK-URL', content='WEBHOOK_MESSAGE')
+    response = webhook.execute()
