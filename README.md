@@ -10,7 +10,7 @@ A Python Script to check the Surf Forecast
 ![License](https://img.shields.io/github/license/Xioto/python-surf-forecast)
 
 
-### [Detailed documentation is here](https://git.io/wsldl-doc)
+### [Detailed documentation is here](https://xioto.github.io/python-surf-forecast)
 
 ## 💻Requirements
 * Python 3.8
@@ -33,15 +33,25 @@ A Python Script to check the Surf Forecast
    cd python-surf-forecast
    python3.8 -m pip install -r requirements.txt
    ```
+3. Run the `main.py` file using `python main.py` 
 
 
-## 🔧Run Python Script
-#### 1. Run the `main.py` file using `python main.py` 
+## 📝Configuring `main.py`
 
-## 📝Configure `main.py`
+COMING SOON...
 
+## 💸Credits
+
+   ### API
+   * [StormGlass](https://stormglass.io/)
+   * [StormGlass Docs](https://docs.stormglass.io/#/)
+   
+   ### Tutorials
+   * COMING SOON...
+   * []()
+   * []()
 
 ## 📄License
-[MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE)
+This repository is licensed under [MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE)
 
-Copyright (c) 2021-2021 Xioto
+Copyright(c) 2021-2021 Xioto
