@@ -61,7 +61,8 @@ A Python Script to check the Surf Forecast
    ### Tutorials
    * [Sending Emails with Python and Gmail](https://realpython.com/python-send-email/)
    * [API Get.Request Code](https://docs.stormglass.io/#/tide)
-
+   * [Discord Webhook Support](https://pypi.org/project/discord-webhook/)
+   
    ### Fixes
    * [Hiding SyntaxWarnings](https://stackoverflow.com/questions/14463277/how-to-disable-python-warnings)
    * [Finding Current Day](https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python)
