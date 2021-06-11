@@ -11,6 +11,8 @@ import datetime # for finding date
 import warnings # for ignoring SyntaxWarnings
 import json # for caching API response
 import smtplib # for sending emails
+import discord_webhook # for discord webhook
+from discord_webhook import DiscordWebhook # renaming
 from email.mime.multipart import MIMEMultipart # for adding HTML email support (coming soon...)
 from email.mime.text import MIMEText # for sending Basic Text in emails
 
@@ -74,3 +76,6 @@ else: #if today is a weekend
     session.sendmail(sender_address, receiver_address, text)
     session.quit()
     print('Mail Sent')
+
+    webhook = DiscordWebhook(url='https://discord.com/api/webhooks/853019289823871006/MtHkZkUgMKaxpZfC_UHvVOzW3RnJYsqebU8IiMYdUK7lt7QNSd_MiFi05ZL6Ee1DLS4m', content='Webhook Message')
+    response = webhook.execute()
