@@ -9,9 +9,6 @@ A Python Script to check the Surf Forecast
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![License](https://img.shields.io/github/license/Xioto/python-surf-forecast)
 
-
-### [Detailed documentation is here](https://xioto.github.io/python-surf-forecast)
-
 ## 💻Requirements
 * Python 3.8
 * Pip
@@ -51,9 +48,11 @@ A Python Script to check the Surf Forecast
    * `sender_address` - Input the Email Address of the Google Account above. This will be used to send the email.
    * `sender_pass` - Input the password of the Google Account
    * `receiver_address` - Input the address that you want to send the email to.
+   * `message['Subject']` - Input the subject line of the email.
 
    ### Discord Support
-   * COMING SOON...
+   * To add discord support, you will need a Webhook URL. To get one of these, follow [this guide](https://help.dashe.io/en/articles/2521940-how-to-create-a-discord-webhook-url), you will need to then paste the URL where it says `(url='DISCORD-WEBHOOK-URL')`.
+   * `content` - Input the content of the Discord Message you want to send.
 
 ## 💸Credits
 
@@ -64,13 +63,14 @@ A Python Script to check the Surf Forecast
    ### Tutorials
    * [Sending Emails with Python and Gmail](https://realpython.com/python-send-email/)
    * [API Get.Request Code](https://docs.stormglass.io/#/tide)
-
+   * [Discord Webhook Support](https://pypi.org/project/discord-webhook/)
+   
    ### Fixes
    * [Hiding SyntaxWarnings](https://stackoverflow.com/questions/14463277/how-to-disable-python-warnings)
    * [Finding Current Day](https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python)
    * [Finding Content in Cache_File](https://www.reddit.com/r/learnprogramming/comments/ntsu78/creating_string1_with_constantly_changing/)
 
 ## 📄License
-This repository is licensed under [MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE)
+This repository is licensed under the [MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE) License.
 
 Copyright(c) 2021-2021 Xioto
