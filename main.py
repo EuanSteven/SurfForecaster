@@ -1,9 +1,8 @@
 # main.py for python-surf-forecast
 # Author: Xioto
-# Last updated: 10/06/2021
-# Version 1.1
-# Latest Change: Added Email Support
-# Next Change: Add HTML Email Support, add Error Handling and change from "ignore all" to ignoring only SyntaxWarnings
+# Last updated: 11/06/2021
+# Version 1.2
+# Latest Change: Added Discord Webhook Support
 # Licensed under the MIT License
 
 import requests # for API requests
