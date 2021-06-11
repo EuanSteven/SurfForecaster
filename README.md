@@ -38,7 +38,15 @@ A Python Script to check the Surf Forecast
 
 ## 📝Configuring `main.py`
 
+## 💸Credits
 
+   ### API
+   * [StormGlass](https://stormglass.io/)
+   * [StormGlass Docs](https://docs.stormglass.io/#/)
+   
+   ### Tutorials
+   * []()
+   * []()
 
 ## 📄License
 This repository is licensed under [MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE)
