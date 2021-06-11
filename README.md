@@ -38,7 +38,22 @@ A Python Script to check the Surf Forecast
 
 ## 📝Configuring `main.py`
 
-COMING SOON...
+   ### Latitude & Longitude
+   * Go to [Google Maps](https://www.google.com/maps) and find the Beach that you want to get a Forecast for, then Right-Click and copy the Lat & Long from Google Maps and paste it in `main.py`.
+
+   ### API-Key
+   * Go to [StormGlass](https://stormglass.io/) and click "Try for Free", you will need to Sign Up, it will then redirect you to the [Dashboard](https://dashboard.stormglass.io/). It will then provide you with an API-Key, you can then paste that in `main.py`.
+   
+   ### Email Support
+   * To add email support, you will need to allow "[Less Secure Apps](https://myaccount.google.com/lesssecureapps) on the Google Account you are using to send the email. **WARNING** - This will make your account more vunerable to less-secure apps.
+   * To remove email support, either remove the code starting from `mail_content` to `print('Mail Send')`. 
+   * `mail_content` - Input the Content of the email you want to send
+   * `sender_address` - Input the Email Address of the Google Account above. This will be used to send the email.
+   * `sender_pass` - Input the password of the Google Account
+   * `receiver_address` - Input the address that you want to send the email to.
+
+   ### Discord Support
+   * COMING SOON...
 
 ## 💸Credits
 
@@ -47,9 +62,13 @@ COMING SOON...
    * [StormGlass Docs](https://docs.stormglass.io/#/)
    
    ### Tutorials
-   * COMING SOON...
-   * []()
-   * []()
+   * [Sending Emails with Python and Gmail](https://realpython.com/python-send-email/)
+   * [API Get.Request Code](https://docs.stormglass.io/#/tide)
+
+   ### Fixes
+   * [Hiding SyntaxWarnings](https://stackoverflow.com/questions/14463277/how-to-disable-python-warnings)
+   * [Finding Current Day](https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python)
+   * [Finding Content in Cache_File](https://www.reddit.com/r/learnprogramming/comments/ntsu78/creating_string1_with_constantly_changing/)
 
 ## 📄License
 This repository is licensed under [MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE)
