@@ -48,9 +48,11 @@ A Python Script to check the Surf Forecast
    * `sender_address` - Input the Email Address of the Google Account above. This will be used to send the email.
    * `sender_pass` - Input the password of the Google Account
    * `receiver_address` - Input the address that you want to send the email to.
+   * `message['Subject']` - Input the subject line of the email.
 
    ### Discord Support
-   * COMING SOON...
+   * To add discord support, you will need a Webhook URL. To get one of these, follow [this guide](https://help.dashe.io/en/articles/2521940-how-to-create-a-discord-webhook-url), you will need to then paste the URL where it says `(url='DISCORD-WEBHOOK-URL')`.
+   * `content` - Input the content of the Discord Message you want to send.
 
 ## 💸Credits
 
@@ -69,6 +71,6 @@ A Python Script to check the Surf Forecast
    * [Finding Content in Cache_File](https://www.reddit.com/r/learnprogramming/comments/ntsu78/creating_string1_with_constantly_changing/)
 
 ## 📄License
-This repository is licensed under [MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE)
+This repository is licensed under the [MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE) License.
 
 Copyright(c) 2021-2021 Xioto
