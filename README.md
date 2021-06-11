@@ -38,6 +38,8 @@ A Python Script to check the Surf Forecast
 
 ## 📝Configuring `main.py`
 
+COMING SOON...
+
 ## 💸Credits
 
    ### API
@@ -45,6 +47,7 @@ A Python Script to check the Surf Forecast
    * [StormGlass Docs](https://docs.stormglass.io/#/)
    
    ### Tutorials
+   * COMING SOON...
    * []()
    * []()
 
