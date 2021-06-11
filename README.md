@@ -47,9 +47,13 @@ COMING SOON...
    * [StormGlass Docs](https://docs.stormglass.io/#/)
    
    ### Tutorials
-   * COMING SOON...
-   * []()
-   * []()
+   * [Sending Emails with Python and Gmail](https://realpython.com/python-send-email/)
+   * [API Get.Request Code](https://docs.stormglass.io/#/tide)
+
+   ### Fixes
+   * [Hiding SyntaxWarnings](https://stackoverflow.com/questions/14463277/how-to-disable-python-warnings)
+   * [Finding Current Day](https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python)
+   * [Finding Content in Cache_File](https://www.reddit.com/r/learnprogramming/comments/ntsu78/creating_string1_with_constantly_changing/)
 
 ## 📄License
 This repository is licensed under [MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE)
