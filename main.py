@@ -65,7 +65,7 @@ else: #if today is a weekend
     message = MIMEMultipart()
     message['From'] = sender_address
     message['To'] = receiver_address
-    message['Subject'] = 'Check MagicSeaweed for Surf Forecast'
+    message['Subject'] = 'EMAIL_SUBJECT'
     message.attach(MIMEText(mail_content, 'plain'))
     session = smtplib.SMTP('smtp.gmail.com', 587)
     session.starttls()
