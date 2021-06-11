@@ -9,9 +9,6 @@ A Python Script to check the Surf Forecast
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![License](https://img.shields.io/github/license/Xioto/python-surf-forecast)
 
-
-### [Detailed documentation is here](https://xioto.github.io/python-surf-forecast)
-
 ## 💻Requirements
 * Python 3.8
 * Pip
