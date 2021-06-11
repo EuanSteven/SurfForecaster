@@ -57,8 +57,7 @@ else: #if today is a weekend
         print('Found') # if a waveHeight above 2.00 is found then send email
 
     mail_content = '''
-    "Hi!\nTHe Python script has detected surf at your-location\nHere is the link to MagicSeaweed:\nhttps://magicseaweed.com
-    \n I am a Bot, if I am wrong, and there is no surf, please contact Xioto."
+    "MAIL_CONTENT"
     ''' # content for email
     sender_address = 'your-gmail-address' # see docs for email support
     sender_pass = 'your-gmail-password'
@@ -76,5 +75,5 @@ else: #if today is a weekend
     session.quit()
     print('Mail Sent')
 
-    webhook = DiscordWebhook(url='https://discord.com/api/webhooks/853019289823871006/MtHkZkUgMKaxpZfC_UHvVOzW3RnJYsqebU8IiMYdUK7lt7QNSd_MiFi05ZL6Ee1DLS4m', content='Webhook Message')
+    webhook = DiscordWebhook(url='DISCORD-WEBHOOK-URL', content='WEBHOOK_MESSAGE')
     response = webhook.execute()
