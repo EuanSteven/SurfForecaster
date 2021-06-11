@@ -38,7 +38,12 @@ A Python Script to check the Surf Forecast
 
 ## 📝Configuring `main.py`
 
-COMING SOON...
+   ### Latitude & Longitude
+   * Go to [Google Maps](https://www.google.com/maps) and find the Beach that you want to get a Forecast for, then Right-Click and copy the Lat & Long from Google Maps and paste it in `main.py`.
+
+   ### API-Key
+   * Go to [StormGlass](https://stormglass.io/) and click "Try for Free", you will need to Sign Up, it will then redirect you to the [Dashboard](https://dashboard.stormglass.io/). It will then provide you with an API-Key, you can then paste that in `main.py`.
+
 
 ## 💸Credits
 
