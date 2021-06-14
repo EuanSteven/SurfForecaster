@@ -1,8 +1,8 @@
 # main.py for python-surf-forecast
 # Author: Xioto
-# Last updated: 11/06/2021
-# Version 1.2
-# Latest Change: Added Discord Webhook Support
+# Last updated: 14/06/2021
+# Version 1.3
+# Latest Change: Added Loading Screen & Small Patches
 # Licensed under the MIT License
 
 import requests # for API requests
@@ -10,17 +10,50 @@ import datetime # for finding date
 import warnings # for ignoring SyntaxWarnings
 import json # for caching API response
 import smtplib # for sending emails
+import sys # for printing dots
 import discord_webhook # for discord webhook
 from discord_webhook import DiscordWebhook # renaming
 from email.mime.multipart import MIMEMultipart # for adding HTML email support (coming soon...)
 from email.mime.text import MIMEText # for sending Basic Text in emails
+from time import sleep # see sys comment
 
-cache_file = 'response.json'
-data = []
+
+print ('''
+██████╗░██╗░░░██╗░░░░░░░██████╗██╗░░░██╗██████╗░███████╗
+██╔══██╗╚██╗░██╔╝░░░░░░██╔════╝██║░░░██║██╔══██╗██╔════╝
+██████╔╝░╚████╔╝░█████╗╚█████╗░██║░░░██║██████╔╝█████╗░░
+██╔═══╝░░░╚██╔╝░░╚════╝░╚═══██╗██║░░░██║██╔══██╗██╔══╝░░
+██║░░░░░░░░██║░░░░░░░░░██████╔╝╚██████╔╝██║░░██║██║░░░░░
+╚═╝░░░░░░░░╚═╝░░░░░░░░░╚═════╝░░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░
+
+''')
+
 
 print("""\
 ＴＨＡＮＫ ＹＯＵ ＦＯＲ  ＵＳＩＮＧ ＴＨＥ ＰＹＴＨＯＮ－ＳＵＲＦ－ＦＯＲＥＣＡＳＴ
                """)
+
+print("Checking for updates")
+
+words = "......................."
+for char in words:
+    sleep(0.3)
+    sys.stdout.write(char)
+    sys.stdout.flush()
+
+
+version = 1.3
+
+if version == 1.2:
+  print('''
+You are up to date!''')
+
+else :
+    print("You are Out-of-Date! Please update at https://github.com/Xioto/python-surf-forecast/releases/")
+
+cache_file = 'response.json'
+data = []
+
 def fxn():
     warnings.warn("deprecated", DeprecationWarning)
 
