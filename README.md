@@ -9,6 +9,9 @@ A Python Script to check the Surf Forecast
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![License](https://img.shields.io/github/license/Xioto/python-surf-forecast)
 
+## NOTE -
+* THIS SCRIPT WILL NOT WORK IF IT IS A WEEKDAY, IT WILL ONLY CHECK AT THE WEEKEND!
+
 ## 💻Requirements
 * Python 3.8
 * Pip
@@ -56,6 +59,10 @@ A Python Script to check the Surf Forecast
 
 ## 🆕Changelog
 
+   ### V1.3 - Loading Screen & Bugs
+   * Added Loading Screen
+   * Patched Small Bug
+
    ### V1.2 - Discord Support 🌈
    * Added Discord Support and tidying Code.
    
@@ -78,6 +85,9 @@ A Python Script to check the Surf Forecast
    * [Hiding SyntaxWarnings](https://stackoverflow.com/questions/14463277/how-to-disable-python-warnings)
    * [Finding Current Day](https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python)
    * [Finding Content in Cache_File](https://www.reddit.com/r/learnprogramming/comments/ntsu78/creating_string1_with_constantly_changing/)
+
+   ### Other
+   * [For Typing Effect](https://www.codegrepper.com/code-examples/python/python+typing+effect)
 
 ## 📄License
 This repository is licensed under the [MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE) License.
