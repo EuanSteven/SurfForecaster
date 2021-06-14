@@ -54,6 +54,15 @@ A Python Script to check the Surf Forecast
    * To add discord support, you will need a Webhook URL. To get one of these, follow [this guide](https://help.dashe.io/en/articles/2521940-how-to-create-a-discord-webhook-url), you will need to then paste the URL where it says `(url='DISCORD-WEBHOOK-URL')`.
    * `content` - Input the content of the Discord Message you want to send.
 
+## 🆕Changelog
+
+   ### V1.2 - Discord Support 🌈
+   * Added Discord Support and tidying Code.
+   
+   ### V1.1 - 🌈
+   * Added Email Support and fixed Bugs.
+
+
 ## 💸Credits
 
    ### API
