@@ -14,7 +14,8 @@ A Python Script to check the Surf Forecast
 
 ## 💻Requirements
 * Python 3.8
-* Pip
+* Pip 21.1.2
+* Git 2.32.0
 
 ## 📦Installation
 
