@@ -1,9 +1,8 @@
 # main.py for python-surf-forecast
 # Author: Xioto
-# Last updated: 20/06/2021
-# Version 1.4
-# Latest Change: Fixed large bug, see here for more info - https://github.com/Xioto/python-surf-forecast/releases/tag/v1.4
-# Next Change: Add HTML Email Support and Random Subjects
+# Last updated: 21/06/2021
+# Version 1.5
+# Latest Change: Tidying comments, see here for more info - https://github.com/Xioto/python-surf-forecast/releases/tag/v1.5
 # Licensed under the MIT License
 
 import requests # for API requests
@@ -43,9 +42,9 @@ for char in words:
     sys.stdout.flush()
 
 
-version = 1.4
+version = 1.5
 
-if version == 1.4:
+if version == 1.5:
   print('''
 You are up to date!''')
 
