@@ -13,7 +13,7 @@ A Python Script to check the Surf Forecast
 * THIS SCRIPT WILL NOT WORK IF IT IS A WEEKDAY, IT WILL ONLY CHECK AT THE WEEKEND!
 
 ## 💻Requirements
-* Python 3.8
+* Python 3.8 & Above
 * Pip 21.1.2
 * Git 2.32.0
 
