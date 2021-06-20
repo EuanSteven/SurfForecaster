@@ -1,8 +1,9 @@
 # main.py for python-surf-forecast
 # Author: Xioto
-# Last updated: 14/06/2021
-# Version 1.3
-# Latest Change: Added Loading Screen & Small Patches
+# Last updated: 20/06/2021
+# Version 1.4
+# Latest Change: Fixed large bug, see here for more info - 
+# Next Change: Add HTML Email Support and Random Subjects
 # Licensed under the MIT License
 
 import requests # for API requests
@@ -42,9 +43,9 @@ for char in words:
     sys.stdout.flush()
 
 
-version = 1.3
+version = 1.4
 
-if version == 1.2:
+if version == 1.4:
   print('''
 You are up to date!''')
 
@@ -68,45 +69,53 @@ else: #if today is a weekend
     print("Attempting to load " + cache_file)
     with open(cache_file, 'r') as f: # opens cache_file 
         data = json.load(f)
-    response = requests.get( # sends request to API
+response = requests.get( # sends request to API
         'https://api.stormglass.io/v2/weather/point',
           params={
         'lat': your-lat-for-surf-location, # add your location here
         'lng': your-long-for-surf-location,
         'params': 'waveHeight', 
-      },
-      headers={
+    },
+    headers={
         'Authorization': 'auth-key' # read docs on how to get an API key
-      }
-      )
-    data = response.json()
-    print("Writing Json cache to " + cache_file)
-    with open(cache_file, 'w') as f:
-        json.dump(data,f) # dumps response from API in response.json (cache_file)
+    }
+)
+    
+data = response.json()
+print("Writing json cache to " + cache_file)
+with open(cache_file, 'w') as f:
+    json.dump(data,f) # dumps response from API in response.json (cache_file)
 
-    sorted(data, key=lambda i:i['hours']) #sorts cache_file
-    print([0])
-    if 'waveHeight' in [0] and 'dwd' in [0]['waveHeight'] and [0]['waveHeight']['dwd'] >= 2.00:
-        print('Found') # if a waveHeight above 2.00 is found then send email
+with open('response.json') as f:
+    data = json.load(f)
 
-    mail_content = '''
-    "MAIL_CONTENT"
-    ''' # content for email
-    sender_address = 'your-gmail-address' # see docs for email support
-    sender_pass = 'your-gmail-password'
-    receiver_address = 'address-to-send-to'
-    message = MIMEMultipart()
-    message['From'] = sender_address
-    message['To'] = receiver_address
-    message['Subject'] = 'EMAIL_SUBJECT'
-    message.attach(MIMEText(mail_content, 'plain'))
-    session = smtplib.SMTP('smtp.gmail.com', 587)
-    session.starttls()
-    session.login(sender_address, sender_pass)
-    text = message.as_string()
-    session.sendmail(sender_address, receiver_address, text)
-    session.quit()
-    print('Mail Sent')
+for hourly_data in data['hours']:
+    if 'waveHeight' in hourly_data.keys() and hourly_data['waveHeight']['dwd'] >= 0.6:
+        print('Found')
+# to enable email support, see the docs or README.md
+##    mail_content = '''
+##    "MAIL_CONTENT"
+##    ''' 
+##    sender_address = 'your-gmail-address'
+##    sender_pass = 'your-gmail-password'
+##    receiver_address = 'address-to-send-to'
+##    message = MIMEMultipart()
+##    message['From'] = sender_address
+##    message['To'] = receiver_address
+##    message['Subject'] = 'EMAIL_SUBJECT'
+##    message.attach(MIMEText(mail_content, 'plain'))
+##    session = smtplib.SMTP('smtp.gmail.com', 587)
+##    session.starttls()
+##    session.login(sender_address, sender_pass)
+##    text = message.as_string()
+##    session.sendmail(sender_address, receiver_address, text)
+##    session.quit()
+##    print('Mail Sent')
 
-    webhook = DiscordWebhook(url='DISCORD-WEBHOOK-URL', content='WEBHOOK_MESSAGE')
-    response = webhook.execute()
+# to enable discord support, see the docs or README.md
+##webhook = DiscordWebhook(url='DISCORD-WEBHOOK-URL', content='WEBHOOK_MESSAGE')
+##response = webhook.execute()   
+    break
+else:
+    print("No Surf Found!")
+
