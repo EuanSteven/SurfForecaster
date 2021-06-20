@@ -9,7 +9,7 @@ A Python Script to check the Surf Forecast
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![License](https://img.shields.io/github/license/Xioto/python-surf-forecast)
 
-![Detailed documentation is here](https://github.com/Xioto/python-surf-forecast/wiki)
+[See here for a detailed documentation!](https://github.com/Xioto/python-surf-forecast/wiki)
 
 ## NOTE -
 * THIS SCRIPT WILL NOT WORK IF IT IS A WEEKDAY, IT WILL ONLY CHECK AT THE WEEKEND!
