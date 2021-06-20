@@ -2,7 +2,7 @@
 # Author: Xioto
 # Last updated: 20/06/2021
 # Version 1.4
-# Latest Change: Fixed large bug, see here for more info - 
+# Latest Change: Fixed large bug, see here for more info - https://github.com/Xioto/python-surf-forecast/releases/tag/v1.4
 # Next Change: Add HTML Email Support and Random Subjects
 # Licensed under the MIT License
 
