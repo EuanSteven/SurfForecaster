@@ -60,7 +60,8 @@ A Python Script to check the Surf Forecast
 
 ## 🆕Changelog
 
-   ### V1.4 - Large Bug Fix 🌈
+   ### V1.4 - Full Releaase! 🌈
+   * Leaving Pre-Release!
    * Patched a bug that prevented the sorting of `response.json`.
    * Removed a part of the loading screen
    * Patched another bug that caused multiple emails to be sent at once
