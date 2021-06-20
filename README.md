@@ -60,7 +60,12 @@ A Python Script to check the Surf Forecast
 
 ## 🆕Changelog
 
-   ### V1.3 - Loading Screen & Bugs
+   ### V1.4 - Large Bug Fix 🌈
+   * Patched a bug that prevented the sorting of `response.json`.
+   * Removed a part of the loading screen
+   * Patched another bug that caused multiple emails to be sent at once
+
+   ### V1.3 - Loading Screen & Bugs 🌈
    * Added Loading Screen
    * Patched Small Bug
 
@@ -78,17 +83,17 @@ A Python Script to check the Surf Forecast
    * [StormGlass Docs](https://docs.stormglass.io/#/)
    
    ### Tutorials
-   * [Sending Emails with Python and Gmail](https://realpython.com/python-send-email/)
+   * [Sending Emails with Python and Gmail](https://realpython.com/python-send-email/) 
    * [API Get.Request Code](https://docs.stormglass.io/#/tide)
-   * [Discord Webhook Support](https://pypi.org/project/discord-webhook/)
+   * [Discord Webhook Support](https://pypi.org/project/discord-webhook/) 
    
    ### Fixes
-   * [Hiding SyntaxWarnings](https://stackoverflow.com/questions/14463277/how-to-disable-python-warnings)
+   * [Hiding SyntaxWarnings](https://stackoverflow.com/questions/14463277/how-to-disable-python-warnings) 
    * [Finding Current Day](https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python)
    * [Finding Content in Cache_File](https://www.reddit.com/r/learnprogramming/comments/ntsu78/creating_string1_with_constantly_changing/)
 
    ### Other
-   * [For Typing Effect](https://www.codegrepper.com/code-examples/python/python+typing+effect)
+   * [For Typing Effect](https://www.codegrepper.com/code-examples/python/python+typing+effect) 
 
 ## 📄License
 This repository is licensed under the [MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE) License.
