@@ -81,6 +81,9 @@ A Python Script to check the Surf Forecast
    ### V1.1 - 🌈
    * Added Email Support and fixed Bugs.
 
+## 🚫Known Issues
+
+   ### None Yet!
 
 ## 💸Credits
 
