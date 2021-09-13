@@ -11,8 +11,10 @@ A Python Script to check the Surf Forecast
 
 [See here for a detailed documentation!](https://github.com/Xioto/python-surf-forecast/wiki)
 
+
 ## NOTE -
-* THIS SCRIPT WILL NOT WORK IF IT IS A WEEKDAY, IT WILL ONLY CHECK AT THE WEEKEND!
+  * I am currently working on checking at a custom weekday. (13/09)
+~~* THIS SCRIPT WILL NOT WORK IF IT IS A WEEKDAY, IT WILL ONLY CHECK AT THE WEEKEND!~~
 
 ## 💻Requirements
 * Python 3.0 & Above
@@ -107,4 +109,4 @@ A Python Script to check the Surf Forecast
 ## 📄License
 This repository is licensed under the [MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE) License.
 
-Copyright©️ 2021-2021 Xioto
+Copyright©️ 2021 Xioto
