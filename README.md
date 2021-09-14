@@ -11,14 +11,15 @@ A Python Script to check the Surf Forecast
 
 [See here for a detailed documentation!](https://github.com/Xioto/python-surf-forecast/wiki)
 
+## 👨‍💻Working On
 
-## NOTE -
-  * I am currently working on checking at a custom weekday. (13/09)
-  
+* Checking on surf forecast for Sunday, on a custom weekday
+
 ## 💻Requirements
 * Python 3.0 & Above
 * Pip 21.1.2
 * Git 2.32.0
+* StormGlass API Key <a href="api">(See Here)</a>
 
 ## 📦Installation
 
@@ -45,7 +46,9 @@ A Python Script to check the Surf Forecast
    ### Latitude & Longitude (Required)
    * Go to [Google Maps](https://www.google.com/maps) and find the Beach that you want to get a Forecast for, then Right-Click and copy the Lat & Long from Google Maps and paste it in `main.py`.
 
-   ### API-Key (Required)
+
+<a id="api"></a>   
+### API-Key (Required)
    * Go to [StormGlass](https://stormglass.io/) and click "Try for Free", you will need to Sign Up, it will then redirect you to the [Dashboard](https://dashboard.stormglass.io/). It will then provide you with an API-Key, you can then paste that in `main.py`.
    
    ### Email Support (Optional)
