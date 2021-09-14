@@ -70,22 +70,27 @@ A Python Script to check the Surf Forecast
 
    ### V1.5 - Comments 🌈
    * Removed useless comments
+   * Released on 20/06/21
 
    ### V1.4 - Full Releaase! 🌈
    * Leaving Pre-Release!
    * Patched a bug that prevented the sorting of `response.json`.
    * Removed a part of the loading screen
    * Patched another bug that caused multiple emails to be sent at once
+   * Released on 20/06/21
 
    ### V1.3 - Loading Screen & Bugs 🌈
    * Added Loading Screen
    * Patched Small Bug
+   * Released on 14/06/21
 
    ### V1.2 - Discord Support 🌈
    * Added Discord Support and tidying Code.
+   * Released on 11/06/21
    
    ### V1.1 - 🌈
    * Added Email Support and fixed Bugs.
+   * Released on 10/06/21
 
 ## 🚫Known Issues
 
