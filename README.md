@@ -16,9 +16,9 @@ A Python Script to check the Surf Forecast
 * Checking on surf forecast for Sunday, on a custom weekday. (14/09) 
 
 ## 💻Requirements
-* Python 3.0 & Above [Download](https://www.python.org/downloads/)
+* Python 3.0 & Above ([Download](https://www.python.org/downloads/))
 * Pip 21.1.2 (Pre-Installed)
-* Git 2.32.0 [Download](https://git-scm.com/download/)
+* Git 2.32.0 ([Download](https://git-scm.com/download/))
 * StormGlass API Key <a href="api">(See Here)</a>
 
 ## 📦Installation
