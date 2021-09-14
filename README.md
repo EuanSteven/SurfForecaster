@@ -13,7 +13,7 @@ A Python Script to check the Surf Forecast
 
 ## 👨‍💻Working On
 
-* Checking on surf forecast for Sunday, on a custom weekday
+* Checking on surf forecast for Sunday, on a custom weekday. (14/09) 
 
 ## 💻Requirements
 * Python 3.0 & Above
@@ -108,7 +108,9 @@ A Python Script to check the Surf Forecast
    * [Finding Content in Cache_File](https://www.reddit.com/r/learnprogramming/comments/ntsu78/creating_string1_with_constantly_changing/)
 
    ### Other
-   * [For Typing Effect](https://www.codegrepper.com/code-examples/python/python+typing+effect) 
+   * [For Typing Effect](https://www.codegrepper.com/code-examples/python/python+typing+effect)
+   * [Gitbook](https://www.gitbook.com/)
+   * [wsldl for the README.MD style](https://github.com/yuk7/wsldl)
 
 ## 📄License
 This repository is licensed under the [MIT](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE) License.
