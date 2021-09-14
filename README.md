@@ -52,7 +52,9 @@ A Python Script to check the Surf Forecast
    * Go to [StormGlass](https://stormglass.io/) and click "Try for Free", you will need to Sign Up, it will then redirect you to the [Dashboard](https://dashboard.stormglass.io/). It will then provide you with an API-Key, you can then paste that in `main.py`.
    
    ### Email Support (Optional)
-   * To add email support, you will need to allow "[Less Secure Apps](https://myaccount.google.com/lesssecureapps) on the Google Account you are using to send the email. **WARNING** - This will make your account more vunerable to less-secure apps.
+   * To add email support, you will need to allow "[Less Secure Apps](https://myaccount.google.com/lesssecureapps)" on the Google Account you are using to send the email. 
+  
+   **WARNING** - This will make your account more vunerable to less-secure apps. [Learn More](https://support.google.com/accounts/answer/6010255?p=less-secure-apps&hl=en-GB&visit_id=637672482665758342-55459182&rd=1).
    * To remove email support, either remove the code starting from `mail_content` to `print('Mail Send')`. 
    * `mail_content` - Input the Content of the email you want to send
    * `sender_address` - Input the Email Address of the Google Account above. This will be used to send the email.
