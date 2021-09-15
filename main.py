@@ -42,9 +42,9 @@ for char in words:
     sys.stdout.flush()
 
 
-version = 1.5
+version = 1.6
 
-if version == 1.5:
+if version == 1.6:
   print('''
 You are up to date!''')
 
