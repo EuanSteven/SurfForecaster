@@ -1,8 +1,8 @@
 # main.py for python-surf-forecast
 # Author: Xioto
-# Last updated: 21/06/2021
-# Version 1.5
-# Latest Change: Tidying comments, see here for more info - https://github.com/Xioto/python-surf-forecast/releases/tag/v1.5
+# Last updated: 15/09/2021
+# Version 1.6
+# Latest Change: Reduce wait time, see here for more info - https://github.com/Xioto/python-surf-forecast/releases/tag/v1.6
 # Licensed under the MIT License
 
 import requests # for API requests
@@ -35,7 +35,7 @@ print("""\
 
 print("Checking for updates")
 
-words = "......................."
+words = "................."
 for char in words:
     sleep(0.3)
     sys.stdout.write(char)
