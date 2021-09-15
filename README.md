@@ -68,6 +68,10 @@ A Python Script to check the Surf Forecast
 
 ## 🆕Changelog
 
+   ### V1.6 - General Tidy 🌈
+   * Removed amount of dots when checking version
+   * Making comments clearer
+
    ### V1.5 - Comments 🌈
    * Removed useless comments
    * Released on 20/06/21
