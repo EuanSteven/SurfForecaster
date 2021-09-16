@@ -17,7 +17,16 @@ from time import sleep # see sys comment
 
 CURRENT_VERSION = 1.6
 
-def main():
+
+def main(lat, long):
+    """
+    Checks the wave conditions at a given surf location.
+
+    :param lat: The latitude of the surf location to check.
+    :param long: The longitude of the surf location to check.
+    :return:
+    """
+
     print('''
     ██████╗░██╗░░░██╗░░░░░░░██████╗██╗░░░██╗██████╗░███████╗
     ██╔══██╗╚██╗░██╔╝░░░░░░██╔════╝██║░░░██║██╔══██╗██╔════╝
@@ -49,9 +58,9 @@ def main():
     response = requests.get(  # sends request to API
         'https://api.stormglass.io/v2/weather/point',
         params={
-            'lat': your-lat-for-surf-location,  # add your location here
-            'lng': your-long-for-surf-location,
-             'params': 'waveHeight',
+            'lat': lat,
+            'lng': long,
+            'params': 'waveHeight',
         },
         headers = {
             'Authorization': 'auth-key'  # read docs on how to get an API key
@@ -124,4 +133,8 @@ def check_current_version(cur_version):
         sys.exit(1)
 
 if __name__ == '__main__':
-    main()
+    # add your surf location latitude and longitude here
+    surf_latitude = 0
+    surf_longitude = 0
+
+    main(surf_latitude, surf_longitude)
