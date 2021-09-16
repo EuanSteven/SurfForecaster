@@ -30,23 +30,8 @@ def main():
     print("""\
     ＴＨＡＮＫ ＹＯＵ ＦＯＲ  ＵＳＩＮＧ ＴＨＥ ＰＹＴＨＯＮ－ＳＵＲＦ－ＦＯＲＥＣＡＳＴ
                    """)
-
-    print("Checking for updates")
-
-    words = "................."
-    for char in words:
-        sleep(0.3)
-        sys.stdout.write(char)
-        sys.stdout.flush()
-
     version = 1.6
-
-    if version == 1.6:
-        print('''
-    You are up to date!''')
-
-    else:
-        print("You are Out-of-Date! Please update at https://github.com/Xioto/python-surf-forecast/releases/")
+    check_current_version(version)
 
     cache_file = 'response.json'
     data = []
@@ -114,6 +99,28 @@ def main():
         break
     else:
         print("No Surf Found!")
+
+
+def check_current_version(cur_version):
+    """
+    Check that we're using the latest version of the script.
+
+    :param cur_version:
+    :return:
+    """
+    print("Checking for updates")
+    words = "................."
+    for char in words:
+        sleep(0.3)
+        sys.stdout.write(char)
+        sys.stdout.flush()
+
+    if cur_version == 1.6:
+        print('''
+    You are up to date!''')
+
+    else:
+        print("You are Out-of-Date! Please update at https://github.com/Xioto/python-surf-forecast/releases/")
 
 
 if __name__ == '__main__':
