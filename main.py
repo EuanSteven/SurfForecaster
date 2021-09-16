@@ -15,6 +15,7 @@ from email.mime.text import MIMEText # for sending Basic Text in emails
 from time import sleep # see sys comment
 
 
+CURRENT_VERSION = 1.6
 
 def main():
     print('''
@@ -30,8 +31,8 @@ def main():
     print("""\
     ＴＨＡＮＫ ＹＯＵ ＦＯＲ  ＵＳＩＮＧ ＴＨＥ ＰＹＴＨＯＮ－ＳＵＲＦ－ＦＯＲＥＣＡＳＴ
                    """)
-    version = 1.6
-    check_current_version(version)
+
+    check_current_version(CURRENT_VERSION)
 
     cache_file = 'response.json'
     data = []
@@ -104,12 +105,16 @@ def main():
 def check_current_version(cur_version):
     """
     Check that we're using the latest version of the script.
+    Exits the program with an error if not using the latest version.
 
     :param cur_version:
     :return:
     """
+
     print("Checking for updates")
+
     words = "................."
+
     for char in words:
         sleep(0.3)
         sys.stdout.write(char)
@@ -121,7 +126,7 @@ def check_current_version(cur_version):
 
     else:
         print("You are Out-of-Date! Please update at https://github.com/Xioto/python-surf-forecast/releases/")
-
+        sys.exit(1)
 
 if __name__ == '__main__':
     main()
