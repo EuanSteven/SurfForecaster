@@ -17,18 +17,24 @@ from time import sleep  # see sys comment
 CURRENT_VERSION = 1.6
 
 
-def send_email(mail_content):
+def send_email(mail_content, from_address, from_pass, to_address):
+    """
+    Sends an email with the provided content.
 
-    sender_address = 'your-gmail-address'
-    sender_pass = 'your-gmail-password'
-    receiver_address = 'address-to-send-to'
-    message = MIMEMultipart(From=sender_address, To=receiver_address, Subject='EMAIL_SUBJECT')
+    :param mail_content: The content of the email
+    :param from_address: The address we're sending the email from
+    :param from_pass: The password to log in
+    :param to_address: Who we're sending the email to.
+    :return:
+    """
+
+    message = MIMEMultipart(From=from_address, To=to_address, Subject='EMAIL_SUBJECT')
     message.attach(MIMEText(mail_content, 'plain'))
     session = smtplib.SMTP('smtp.gmail.com', 587)
     session.starttls()
-    session.login(sender_address, sender_pass)
+    session.login(from_address, from_pass)
     text = message.as_string()
-    session.sendmail(sender_address, receiver_address, text)
+    session.sendmail(from_address, to_address, text)
     session.quit()
     print('Mail Sent')
 
@@ -97,7 +103,7 @@ def main(lat, long, send_as_email=False):
 
         # to enable email support, see the docs or README.md
         if send_as_email:
-            send_email(content)
+            send_email(content, from_address=None, from_pass=None, to_address=None)
 
         # to enable discord support, see the docs or README.md
         ##webhook = DiscordWebhook(url='DISCORD-WEBHOOK-URL', content='WEBHOOK_MESSAGE')
@@ -138,5 +144,11 @@ if __name__ == '__main__':
     # add your surf location latitude and longitude here
     surf_latitude = 0
     surf_longitude = 0
+
+    # These values are needed if an email is going to be sent...
+    from_address = 'your-gmail-address'
+    from_pass = 'your-gmail-password'
+    to_address = 'address-to-send-to'
+
 
     main(surf_latitude, surf_longitude)
