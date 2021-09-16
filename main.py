@@ -42,9 +42,7 @@ def main():
         warnings.warn("deprecated", DeprecationWarning)
 
     weekno = datetime.datetime.today().weekday()  # finds current date
-    if weekno < 5:  # if today is a weekday
-        pass
-    else:  # if today is a weekend
+    if weekno > 4:  # if today is a weekend
         print("Attempting to load " + cache_file)
         with open(cache_file, 'r') as f:  # opens cache_file
             data = json.load(f)
