@@ -37,12 +37,9 @@ def main():
     cache_file = 'response.json'
     data = []
 
-    def fxn():
-        warnings.warn("deprecated", DeprecationWarning)
-
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
-        fxn()
+        warnings.warn("deprecated", DeprecationWarning)
 
     weekno = datetime.datetime.today().weekday()  # finds current date
     if weekno < 5:  # if today is a weekday
