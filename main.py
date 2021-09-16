@@ -43,7 +43,7 @@ def main():
 
     weekno = datetime.datetime.today().weekday()  # finds current date
     if weekno > 4:  # if today is a weekend
-        print("Attempting to load " + cache_file)
+        print(f"Attempting to load {cache_file}")
         with open(cache_file, 'r') as f:  # opens cache_file
             data = json.load(f)
     response = requests.get(  # sends request to API
