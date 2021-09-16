@@ -18,6 +18,27 @@ from time import sleep # see sys comment
 CURRENT_VERSION = 1.6
 
 
+def send_email(content):
+    mail_content = '''
+    "MAIL_CONTENT"
+    '''
+    sender_address = 'your-gmail-address'
+    sender_pass = 'your-gmail-password'
+    receiver_address = 'address-to-send-to'
+    message = MIMEMultipart()
+    message['From'] = sender_address
+    message['To'] = receiver_address
+    message['Subject'] = 'EMAIL_SUBJECT'
+    message.attach(MIMEText(mail_content, 'plain'))
+    session = smtplib.SMTP('smtp.gmail.com', 587)
+    session.starttls()
+    session.login(sender_address, sender_pass)
+    text = message.as_string()
+    session.sendmail(sender_address, receiver_address, text)
+    session.quit()
+    print('Mail Sent')
+
+
 def main(lat, long):
     """
     Checks the wave conditions at a given surf location.
@@ -76,26 +97,9 @@ def main(lat, long):
     for hourly_data in data.get('hours', None):
         if 'waveHeight' in hourly_data.keys() and hourly_data['waveHeight']['dwd'] >= 0.6:
             print('Found')
-
+        
         # to enable email support, see the docs or README.md
-        ##    mail_content = '''
-        ##    "MAIL_CONTENT"
-        ##    '''
-        ##    sender_address = 'your-gmail-address'
-        ##    sender_pass = 'your-gmail-password'
-        ##    receiver_address = 'address-to-send-to'
-        ##    message = MIMEMultipart()
-        ##    message['From'] = sender_address
-        ##    message['To'] = receiver_address
-        ##    message['Subject'] = 'EMAIL_SUBJECT'
-        ##    message.attach(MIMEText(mail_content, 'plain'))
-        ##    session = smtplib.SMTP('smtp.gmail.com', 587)
-        ##    session.starttls()
-        ##    session.login(sender_address, sender_pass)
-        ##    text = message.as_string()
-        ##    session.sendmail(sender_address, receiver_address, text)
-        ##    session.quit()
-        ##    print('Mail Sent')
+        # send_email(content)
 
         # to enable discord support, see the docs or README.md
         ##webhook = DiscordWebhook(url='DISCORD-WEBHOOK-URL', content='WEBHOOK_MESSAGE')
