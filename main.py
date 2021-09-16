@@ -55,6 +55,7 @@ def main(lat, long):
         print(f"Attempting to load {cache_file}")
         with open(cache_file, 'r') as f:  # opens cache_file
             data = json.load(f)
+
     response = requests.get(  # sends request to API
         'https://api.stormglass.io/v2/weather/point',
         params={
@@ -68,16 +69,14 @@ def main(lat, long):
     )
 
     data = response.json()
-    print("Writing json cache to " + cache_file)
+    print(f"Writing json cache to {cache_file}")
     with open(cache_file, 'w') as f:
         json.dump(data, f)  # dumps response from API in response.json (cache_file)
-
-    with open('response.json') as f:
-        data = json.load(f)
 
     for hourly_data in data['hours']:
         if 'waveHeight' in hourly_data.keys() and hourly_data['waveHeight']['dwd'] >= 0.6:
             print('Found')
+
         # to enable email support, see the docs or README.md
         ##    mail_content = '''
         ##    "MAIL_CONTENT"
