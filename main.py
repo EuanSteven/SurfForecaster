@@ -73,7 +73,7 @@ def main(lat, long):
     with open(cache_file, 'w') as f:
         json.dump(data, f)  # dumps response from API in response.json (cache_file)
 
-    for hourly_data in data['hours']:
+    for hourly_data in data.get('hours', None):
         if 'waveHeight' in hourly_data.keys() and hourly_data['waveHeight']['dwd'] >= 0.6:
             print('Found')
 
