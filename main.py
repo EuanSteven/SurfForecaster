@@ -2,33 +2,27 @@
 # Author: Xioto
 # Licensed under the MIT License
 
-import requests # for API requests
-import datetime # for finding date
-import warnings # for ignoring SyntaxWarnings
-import json # for caching API response
-import smtplib # for sending emails
-import sys # for printing dots
-import discord_webhook # for discord webhook
-from discord_webhook import DiscordWebhook # renaming
-from email.mime.multipart import MIMEMultipart # for adding HTML email support (coming soon...)
-from email.mime.text import MIMEText # for sending Basic Text in emails
-from time import sleep # see sys comment
-
+import requests  # for API requests
+import datetime  # for finding date
+import warnings  # for ignoring SyntaxWarnings
+import json  # for caching API response
+import smtplib  # for sending emails
+import sys  # for printing dots
+import discord_webhook  # for discord webhook
+from discord_webhook import DiscordWebhook  # renaming
+from email.mime.multipart import MIMEMultipart  # for adding HTML email support (coming soon...)
+from email.mime.text import MIMEText  # for sending Basic Text in emails
+from time import sleep  # see sys comment
 
 CURRENT_VERSION = 1.6
 
 
-def send_email(content):
-    mail_content = '''
-    "MAIL_CONTENT"
-    '''
+def send_email(mail_content):
+
     sender_address = 'your-gmail-address'
     sender_pass = 'your-gmail-password'
     receiver_address = 'address-to-send-to'
-    message = MIMEMultipart()
-    message['From'] = sender_address
-    message['To'] = receiver_address
-    message['Subject'] = 'EMAIL_SUBJECT'
+    message = MIMEMultipart(From=sender_address, To=receiver_address, Subject='EMAIL_SUBJECT')
     message.attach(MIMEText(mail_content, 'plain'))
     session = smtplib.SMTP('smtp.gmail.com', 587)
     session.starttls()
@@ -39,10 +33,11 @@ def send_email(content):
     print('Mail Sent')
 
 
-def main(lat, long):
+def main(lat, long, send_as_email=False):
     """
     Checks the wave conditions at a given surf location.
 
+    :param send_as_email: Whether to send the result as an email.
     :param lat: The latitude of the surf location to check.
     :param long: The longitude of the surf location to check.
     :return:
@@ -84,7 +79,7 @@ def main(lat, long):
             'lng': long,
             'params': 'waveHeight',
         },
-        headers = {
+        headers={
             'Authorization': 'auth-key'  # read docs on how to get an API key
         }
     )
@@ -94,12 +89,15 @@ def main(lat, long):
     with open(cache_file, 'w') as f:
         json.dump(data, f)  # dumps response from API in response.json (cache_file)
 
+    content = ''
     for hourly_data in data.get('hours', None):
         if 'waveHeight' in hourly_data.keys() and hourly_data['waveHeight']['dwd'] >= 0.6:
             print('Found')
-        
+            content = hourly_data
+
         # to enable email support, see the docs or README.md
-        # send_email(content)
+        if send_as_email:
+            send_email(content)
 
         # to enable discord support, see the docs or README.md
         ##webhook = DiscordWebhook(url='DISCORD-WEBHOOK-URL', content='WEBHOOK_MESSAGE')
@@ -134,6 +132,7 @@ def check_current_version(cur_version):
     else:
         print("You are Out-of-Date! Please update at https://github.com/Xioto/python-surf-forecast/releases/")
         sys.exit(1)
+
 
 if __name__ == '__main__':
     # add your surf location latitude and longitude here
