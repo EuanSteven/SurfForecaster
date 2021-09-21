@@ -2,18 +2,19 @@
 
 A Python Script to check the Surf Forecast
 
-<img src="https://github.com/Xioto/python-surf-forecast/blob/main/docs/assets/img/logo.png" alt="logo" width="500"/>
+<img src="https://github.com/Xioto/python-surf-forecast/blob/main/docs/assets/img/logo.png" alt=" logo" width="500"/>
 
 [![GitHub Status](https://img.shields.io/github/checks-status/Xioto/python-surf-forecast/main)](https://github.com/Xioto/python-surf-forecast/)
 [![Github All Releases](https://img.shields.io/github/downloads/Xioto/python-surf-forecast/total.svg?style=flat-square)](https://github.com/Xioto/python-surf-forecast/releases/latest)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![License](https://img.shields.io/github/license/Xioto/python-surf-forecast)
 
-[See here for a detailed documentation!](https://github.com/Xioto/python-surf-forecast/wiki)
+[See here for detailed documentation!](https://github.com/Xioto/python-surf-forecast/wiki)
 
 ## 👨‍💻Working On
 
 * Checking on surf forecast for Sunday, on a custom weekday. (14/09) 
+* Add API Data about Water Quality [Issue](https://github.com/xioto/python-surf-forecast/issues/7)
 
 ## 💻Requirements
 * Python 3.0 & Above ([Download](https://www.python.org/downloads/))
