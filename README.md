@@ -14,7 +14,7 @@ A Python Script to check the Surf Forecast
 ## 👨‍💻Working On
 
 * Checking on surf forecast for Sunday, on a custom weekday. (14/09) 
-* Add API Data about Water Quality [Issue](https://github.com/xioto/python-surf-forecast/issues/7)
+* Add API Data about Water Quality ([Issue #7](https://github.com/xioto/python-surf-forecast/issues/7))
 
 ## 💻Requirements
 * Python 3.0 & Above ([Download](https://www.python.org/downloads/))
