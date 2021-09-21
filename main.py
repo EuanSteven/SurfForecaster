@@ -1,9 +1,6 @@
 # main.py for python-surf-forecast
 # Author: Xioto
-# Last updated: 15/09/2021
-# Version 1.6
-# Latest Change: Reduce wait time, see here for more info - https://github.com/Xioto/python-surf-forecast/releases/tag/v1.6
-# Licensed under the MIT License
+# Licensed under the Apache License
 
 import requests # for API requests
 import datetime # for finding date
