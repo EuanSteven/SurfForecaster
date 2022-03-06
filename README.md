@@ -127,4 +127,4 @@ This repository is licensed under the [Apache](https://github.com/Xioto/python-s
 
 *I am not responsible for content on any other websites linked to from this site - the inclusion of any such links does not necessarily imply a recommendation or endorse the views expressed within them. We have no control over the nature, content and availability of those sites and you view them strictly at your own risk.*
 
-Copyright©️ 2021 Xioto
+Copyright©️ 2022 Xioto
