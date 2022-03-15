@@ -119,7 +119,6 @@ A Python Script to check the Surf Forecast
    * [Discord Webhook Support](https://pypi.org/project/discord-webhook/) 
    
    ### Fixes
-   * [Hiding SyntaxWarnings](https://stackoverflow.com/questions/14463277/how-to-disable-python-warnings) 
    * [Finding Current Day](https://stackoverflow.com/questions/29384696/how-to-find-current-day-is-weekday-or-weekends-in-python)
    * [Finding Content in Cache_File](https://www.reddit.com/r/learnprogramming/comments/ntsu78/creating_string1_with_constantly_changing/)
 
