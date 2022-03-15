@@ -11,10 +11,6 @@ A Python Script to check the Surf Forecast
 
 [See here for detailed documentation!](https://github.com/Xioto/python-surf-forecast/wiki)
 
-## 👨‍💻Working On
-
-* Check API Data on custom weekday ([Issue #10](https://github.com/xioto/python-surf-forecast/issues/10))
-* Add API Data about Water Quality ([Issue #7](https://github.com/xioto/python-surf-forecast/issues/7))
 
 ## 💻Requirements
 * Python 3.0 & Above ([Download](https://www.python.org/downloads/))
@@ -22,9 +18,11 @@ A Python Script to check the Surf Forecast
 * Git 2.32.0 ([Download](https://git-scm.com/download/))
 * StormGlass API Key (<a href="api">See Here</a>)
 
+
 ## 📦Installation
 
-**Note:**
+**Note: You may wish to run this script in a virtual environment, as these modules will install system-wide. To find out more, (see here)[https://realpython.com/python-virtual-environments-a-primer/#using-virtual-environments]**
+
 1. Clone the repo
    ```sh
    git clone https://github.com/Xioto/python-surf-forecast
@@ -67,17 +65,27 @@ A Python Script to check the Surf Forecast
    * To add discord support, you will need a Webhook URL. To get one of these, follow [this guide](https://help.dashe.io/en/articles/2521940-how-to-create-a-discord-webhook-url), you will need to then paste the URL where it says `(url='DISCORD-WEBHOOK-URL')`.
    * `content` - Input the content of the Discord Message you want to send.
 
+
 ## 🆕Changelog
+
+   ### V2 - Major Update 🌈
+   * Removed checking for updates and version
+   * Removed bad error handling
+   * Fixed spelling errors
+   * Added response.json to .gitignore
+   * Tidy of the readme.md
+   * Released on 15/03/22
 
    ### V1.6 - General Tidy 🌈
    * Removed amount of dots when checking version
    * Making comments clearer
+   * Released on 15/9/21
 
    ### V1.5 - Comments 🌈
    * Removed useless comments
    * Released on 20/06/21
 
-   ### V1.4 - Full Releaase! 🌈
+   ### V1.4 - Full Release 🌈
    * Leaving Pre-Release!
    * Patched a bug that prevented the sorting of `response.json`.
    * Removed a part of the loading screen
@@ -97,9 +105,6 @@ A Python Script to check the Surf Forecast
    * Added Email Support and fixed Bugs.
    * Released on 10/06/21
 
-## 🚫Known Issues
-
-   ### None Yet!
 
 ## 💸Credits
 
@@ -118,13 +123,12 @@ A Python Script to check the Surf Forecast
    * [Finding Content in Cache_File](https://www.reddit.com/r/learnprogramming/comments/ntsu78/creating_string1_with_constantly_changing/)
 
    ### Other
-   * [For Typing Effect](https://www.codegrepper.com/code-examples/python/python+typing+effect)
-   * [Gitbook](https://www.gitbook.com/)
    * [wsldl for the README.MD style](https://github.com/yuk7/wsldl)
+
 
 ## 📄License
 This repository is licensed under the [Apache](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE) License.
 
-*I am not responsible for content on any other websites linked to from this site - the inclusion of any such links does not necessarily imply a recommendation or endorse the views expressed within them. We have no control over the nature, content and availability of those sites and you view them strictly at your own risk.*
+*I am not responsible for content on any other websites linked to from this site - the inclusion of any such links does not necessarily imply a recommendation or endorse the views expressed within them. I have no control over the nature, content and availability of those sites and you view them strictly at your own risk.*
 
 Copyright©️ 2022 Xioto
