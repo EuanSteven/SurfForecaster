@@ -21,7 +21,7 @@ A Python Script to check the Surf Forecast
 
 ## 📦Installation
 
-**Note: You may wish to run this script in a virtual environment, as these modules will install system-wide. To find out more, (see here)[https://realpython.com/python-virtual-environments-a-primer/#using-virtual-environments]**
+**Note: You may wish to run this script in a virtual environment, as these modules will install system-wide. To find out more, [see here](https://realpython.com/python-virtual-environments-a-primer/#using-virtual-environments)**
 
 1. Clone the repo
    ```sh
