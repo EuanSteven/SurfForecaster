@@ -25,38 +25,8 @@ print ('''
 
 ''')
 
-
-print("""\
-ＴＨＡＮＫ ＹＯＵ ＦＯＲ  ＵＳＩＮＧ ＴＨＥ ＰＹＴＨＯＮ－ＳＵＲＦ－ＦＯＲＥＣＡＳＴ
-               """)
-
-print("Checking for updates")
-
-words = "................."
-for char in words:
-    sleep(0.3)
-    sys.stdout.write(char)
-    sys.stdout.flush()
-
-
-version = 1.6
-
-if version == 1.6:
-  print('''
-You are up to date!''')
-
-else :
-    print("You are Out-of-Date! Please update at https://github.com/Xioto/python-surf-forecast/releases/")
-
 cache_file = 'response.json'
 data = []
-
-def fxn():
-    warnings.warn("deprecated", DeprecationWarning)
-
-with warnings.catch_warnings():
-    warnings.simplefilter("ignore")
-    fxn()
 
 weekno = datetime.datetime.today().weekday() # finds current date
 if weekno < 5: # if today is a weekday
@@ -78,7 +48,7 @@ response = requests.get( # sends request to API
 )
     
 data = response.json()
-print("Writing json cache to " + cache_file)
+print("Writing JSON cache to " + cache_file)
 with open(cache_file, 'w') as f:
     json.dump(data,f) # dumps response from API in response.json (cache_file)
 
