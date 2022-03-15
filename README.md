@@ -74,6 +74,7 @@ A Python Script to check the Surf Forecast
    * Fixed spelling errors
    * Added response.json to .gitignore
    * Tidy of the readme.md
+   * Updated wiki
    * Released on 15/03/22
 
    ### V1.6 - General Tidy 🌈
