@@ -1,15 +1,15 @@
-# python-surf-forecast
+# PythonSurfForecast
 
 A Python Script to check the Surf Forecast
 
-<img src="https://github.com/Xioto/python-surf-forecast/blob/main/docs/assets/img/logo.png" alt=" logo" width="500"/>
+<img src="https://github.com/Xioto/PythonSurfForecast/blob/main/docs/assets/img/logo.png" alt=" logo" width="500"/>
 
-[![GitHub Status](https://img.shields.io/github/checks-status/Xioto/python-surf-forecast/main)](https://github.com/Xioto/python-surf-forecast/)
-[![Github All Releases](https://img.shields.io/github/downloads/Xioto/python-surf-forecast/total.svg?style=flat-square)](https://github.com/Xioto/python-surf-forecast/releases/latest)
+[![GitHub Status](https://img.shields.io/github/checks-status/Xioto/PythonSurfForecast/main)](https://github.com/Xioto/PythonSurfForecast/)
+[![Github All Releases](https://img.shields.io/github/downloads/Xioto/PythonSurfForecast/total.svg?style=flat-square)](https://github.com/Xioto/PythonSurfForecast/releases/latest)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-![License](https://img.shields.io/github/license/Xioto/python-surf-forecast)
+![License](https://img.shields.io/github/license/Xioto/PythonSurfForecast)
 
-[See here for detailed documentation!](https://github.com/Xioto/python-surf-forecast/wiki)
+[See here for detailed documentation!](https://github.com/Xioto/PythonSurfForecast/wiki)
 
 
 ## 💻Requirements
@@ -25,16 +25,16 @@ A Python Script to check the Surf Forecast
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Xioto/python-surf-forecast
+   git clone https://github.com/Xioto/PythonSurfForecast
    ```
 2. Install Python packages
    ```sh
    # Windows
-   cd python-surf-forecast
+   cd PythonSurfForecast
    py -3 -m pip install -r requirements.txt
    
    # Unix
-   cd python-surf-forecast
+   cd PythonSurfForecast
    python3.8 -m pip install -r requirements.txt
    ```
 3. Run the `main.py` file using `python main.py` 
@@ -127,7 +127,7 @@ A Python Script to check the Surf Forecast
 
 
 ## 📄License
-This repository is licensed under the [Apache](https://github.com/Xioto/python-surf-forecast/blob/main/LICENSE) License.
+This repository is licensed under the [Apache](https://github.com/Xioto/PythonSurfForecast/blob/main/LICENSE) License.
 
 *I am not responsible for content on any other websites linked to from this site - the inclusion of any such links does not necessarily imply a recommendation or endorse the views expressed within them. I have no control over the nature, content and availability of those sites and you view them strictly at your own risk.*
 
